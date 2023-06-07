@@ -13,4 +13,7 @@
    <FileRef
       location = "group:PDFPagePickerTestApp.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:PDFPagePickerTestApp.xctestplan">
+   </FileRef>
 </Workspace>
