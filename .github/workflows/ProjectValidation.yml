@@ -16,7 +16,7 @@ jobs:
       - name: Select Xcode Version
         run: sudo xcode-select --switch ${{ vars.TOOLPATH }}
       - name: Verify Format
-        run: swiftformat Sources Tests --lint --dryrun
+        run: swiftformat . --lint --dryrun
   linter-validation:
     name: Linter
     runs-on: ${{ vars.RUNNER }}
@@ -26,7 +26,7 @@ jobs:
       - name: Select Xcode Version
         run: sudo xcode-select --switch ${{ vars.TOOLPATH }}
       - name: Run Linter
-        run: swiftlint Sources Tests --quiet 
+        run: swiftlint . --quiet 
   build-and-test-package:
     strategy:
       matrix:

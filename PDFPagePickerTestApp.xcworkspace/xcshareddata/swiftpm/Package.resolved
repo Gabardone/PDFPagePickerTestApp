@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "pdfpagepicker",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Gabardone/PDFPagePicker",
+      "state" : {
+        "revision" : "f020e75eedd515100f5cc251899ba3725c782c88",
+        "version" : "1.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}

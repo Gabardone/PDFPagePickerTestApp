@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "31C692DF-3EA1-49BB-A658-255A186183FE",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false,
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:PDFPagePickerTestApp.xcodeproj",
+      "identifier" : "0880B22D29938738007B4892",
+      "name" : "PDFPagePickerTestApp"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PDFPagePickerTestApp.xcodeproj",
+        "identifier" : "0880B23C29938739007B4892",
+        "name" : "PDFPagePickerTestAppTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:PDFPagePickerTestApp.xcodeproj",
+        "identifier" : "0880B24629938739007B4892",
+        "name" : "PDFPagePickerTestAppUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
