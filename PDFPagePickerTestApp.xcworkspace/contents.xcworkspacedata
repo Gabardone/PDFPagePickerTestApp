@@ -2,9 +2,15 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:PDFPagePickerTestApp/PDFPagePickerTestApp.xcodeproj">
+      location = "group:README.md">
    </FileRef>
    <FileRef
-      location = "group:">
+      location = "group:Contributing.md">
+   </FileRef>
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:PDFPagePickerTestApp.xcodeproj">
    </FileRef>
 </Workspace>

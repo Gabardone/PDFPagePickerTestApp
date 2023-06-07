@@ -12,8 +12,8 @@
 		0880B23729938739007B4892 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0880B23529938739007B4892 /* MainMenu.xib */; };
 		0880B24229938739007B4892 /* PDFPagePickerTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880B24129938739007B4892 /* PDFPagePickerTestAppTests.swift */; };
 		0880B24C29938739007B4892 /* PDFPagePickerTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880B24B29938739007B4892 /* PDFPagePickerTestAppUITests.swift */; };
-		0880B24E29938739007B4892 /* PDFPagePickerTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880B24D29938739007B4892 /* PDFPagePickerTestAppUITestsLaunchTests.swift */; };
 		0882658829938FAB00FAC732 /* PDFPagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 0882658729938FAB00FAC732 /* PDFPagePicker */; };
+		08F551352A3054F300945363 /* PDFPagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 08F551342A3054F300945363 /* PDFPagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		0880B24129938739007B4892 /* PDFPagePickerTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPagePickerTestAppTests.swift; sourceTree = "<group>"; };
 		0880B24729938739007B4892 /* PDFPagePickerTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFPagePickerTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0880B24B29938739007B4892 /* PDFPagePickerTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPagePickerTestAppUITests.swift; sourceTree = "<group>"; };
-		0880B24D29938739007B4892 /* PDFPagePickerTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPagePickerTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F551352A3054F300945363 /* PDFPagePicker in Frameworks */,
 				0882658829938FAB00FAC732 /* PDFPagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				0880B24B29938739007B4892 /* PDFPagePickerTestAppUITests.swift */,
-				0880B24D29938739007B4892 /* PDFPagePickerTestAppUITestsLaunchTests.swift */,
 			);
 			path = PDFPagePickerTestAppUITests;
 			sourceTree = "<group>";
@@ -154,6 +153,7 @@
 			name = PDFPagePickerTestApp;
 			packageProductDependencies = (
 				0882658729938FAB00FAC732 /* PDFPagePicker */,
+				08F551342A3054F300945363 /* PDFPagePicker */,
 			);
 			productName = PDFPagePickerTestApp;
 			productReference = 0880B22E29938738007B4892 /* PDFPagePickerTestApp.app */;
@@ -228,6 +228,7 @@
 			);
 			mainGroup = 0880B22529938738007B4892;
 			packageReferences = (
+				08F551332A3054F300945363 /* XCRemoteSwiftPackageReference "PDFPagePicker" */,
 			);
 			productRefGroup = 0880B22F29938738007B4892 /* Products */;
 			projectDirPath = "";
@@ -287,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0880B24E29938739007B4892 /* PDFPagePickerTestAppUITestsLaunchTests.swift in Sources */,
 				0880B24C29938739007B4892 /* PDFPagePickerTestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -599,9 +599,25 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		08F551332A3054F300945363 /* XCRemoteSwiftPackageReference "PDFPagePicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Gabardone/PDFPagePicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		0882658729938FAB00FAC732 /* PDFPagePicker */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = PDFPagePicker;
+		};
+		08F551342A3054F300945363 /* PDFPagePicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08F551332A3054F300945363 /* XCRemoteSwiftPackageReference "PDFPagePicker" */;
 			productName = PDFPagePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
