@@ -10,15 +10,14 @@ import PDFPagePicker
 
 @main
 class PDFPagePickerTestAppDelegate: NSObject, NSApplicationDelegate {
-
     @IBOutlet var window: NSWindow!
 
-    func applicationDidFinishLaunching(_ notification: Notification) {
+    func applicationDidFinishLaunching(_: Notification) {
         let singleImportViewController = SingleImageImportViewController()
         window.contentViewController = singleImportViewController
     }
 
-    func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
-        return true
+    func applicationSupportsSecureRestorableState(_: NSApplication) -> Bool {
+        true
     }
 }
