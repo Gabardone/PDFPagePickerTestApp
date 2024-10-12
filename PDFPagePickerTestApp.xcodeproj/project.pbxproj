@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,7 @@
 		0880B24229938739007B4892 /* PDFPagePickerTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880B24129938739007B4892 /* PDFPagePickerTestAppTests.swift */; };
 		0880B24C29938739007B4892 /* PDFPagePickerTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0880B24B29938739007B4892 /* PDFPagePickerTestAppUITests.swift */; };
 		0882658829938FAB00FAC732 /* PDFPagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 0882658729938FAB00FAC732 /* PDFPagePicker */; };
-		08F551352A3054F300945363 /* PDFPagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 08F551342A3054F300945363 /* PDFPagePicker */; };
+		08AD03422B7D96B600A01D12 /* PDFPagePicker in Frameworks */ = {isa = PBXBuildFile; productRef = 08AD03412B7D96B600A01D12 /* PDFPagePicker */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +43,7 @@
 		0880B24129938739007B4892 /* PDFPagePickerTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPagePickerTestAppTests.swift; sourceTree = "<group>"; };
 		0880B24729938739007B4892 /* PDFPagePickerTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFPagePickerTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0880B24B29938739007B4892 /* PDFPagePickerTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPagePickerTestAppUITests.swift; sourceTree = "<group>"; };
+		08AA61D32B82B8F100986B1C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MainMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08F551352A3054F300945363 /* PDFPagePicker in Frameworks */,
+				08AD03422B7D96B600A01D12 /* PDFPagePicker in Frameworks */,
 				0882658829938FAB00FAC732 /* PDFPagePicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,7 +154,7 @@
 			name = PDFPagePickerTestApp;
 			packageProductDependencies = (
 				0882658729938FAB00FAC732 /* PDFPagePicker */,
-				08F551342A3054F300945363 /* PDFPagePicker */,
+				08AD03412B7D96B600A01D12 /* PDFPagePicker */,
 			);
 			productName = PDFPagePickerTestApp;
 			productReference = 0880B22E29938738007B4892 /* PDFPagePickerTestApp.app */;
@@ -203,7 +204,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					0880B22D29938738007B4892 = {
 						CreatedOnToolsVersion = 14.2;
@@ -225,10 +226,11 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 0880B22529938738007B4892;
 			packageReferences = (
-				08F551332A3054F300945363 /* XCRemoteSwiftPackageReference "PDFPagePicker" */,
+				08AD03402B7D96B600A01D12 /* XCLocalSwiftPackageReference "../PDFPagePicker" */,
 			);
 			productRefGroup = 0880B22F29938738007B4892 /* Products */;
 			projectDirPath = "";
@@ -312,6 +314,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0880B23629938739007B4892 /* Base */,
+				08AA61D32B82B8F100986B1C /* es */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -323,6 +326,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -352,9 +357,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -369,13 +376,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -383,6 +391,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -412,9 +422,11 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -423,12 +435,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -441,6 +454,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -455,7 +469,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmv.PDFPagePickerTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -468,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -482,7 +496,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmv.PDFPagePickerTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -493,14 +506,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmv.PDFPagePickerTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFPagePickerTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PDFPagePickerTestApp";
 			};
 			name = Debug;
@@ -512,14 +524,13 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmv.PDFPagePickerTestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PDFPagePickerTestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PDFPagePickerTestApp";
 			};
 			name = Release;
@@ -530,13 +541,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmv.PDFPagePickerTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = PDFPagePickerTestApp;
 			};
 			name = Debug;
@@ -547,13 +558,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscarmv.PDFPagePickerTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = PDFPagePickerTestApp;
 			};
 			name = Release;
@@ -599,25 +610,20 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		08F551332A3054F300945363 /* XCRemoteSwiftPackageReference "PDFPagePicker" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Gabardone/PDFPagePicker";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.1;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		08AD03402B7D96B600A01D12 /* XCLocalSwiftPackageReference "../PDFPagePicker" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../PDFPagePicker;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		0882658729938FAB00FAC732 /* PDFPagePicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PDFPagePicker;
 		};
-		08F551342A3054F300945363 /* PDFPagePicker */ = {
+		08AD03412B7D96B600A01D12 /* PDFPagePicker */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 08F551332A3054F300945363 /* XCRemoteSwiftPackageReference "PDFPagePicker" */;
 			productName = PDFPagePicker;
 		};
 /* End XCSwiftPackageProductDependency section */
