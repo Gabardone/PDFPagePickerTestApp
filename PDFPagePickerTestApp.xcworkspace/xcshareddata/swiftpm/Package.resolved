@@ -1,23 +1,15 @@
 {
+  "originHash" : "32ae7cc141b60eb0c963f7db4cd68dc824ee5ce39480dafee189419f1518a719",
   "pins" : [
     {
-      "identity" : "autolayouthelpers",
+      "identity" : "pdfpagepicker",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Gabardone/AutoLayoutHelpers",
+      "location" : "https://github.com/Gabardone/PDFPagePicker",
       "state" : {
-        "revision" : "45989dc5b65c6ab34f40beaf3cf1f8fb991d0730",
-        "version" : "1.2.2"
-      }
-    },
-    {
-      "identity" : "iutilitis",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Gabardone/Iutilitis",
-      "state" : {
-        "revision" : "ebd7b676fbcf048327afc1da954a1dded6909564",
-        "version" : "0.0.1"
+        "revision" : "01e13be60c7470aebfc25407075969a3ca4b9ac1",
+        "version" : "2.0.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
